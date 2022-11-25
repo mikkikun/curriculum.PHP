@@ -1,0 +1,43 @@
+@media screen and (max-width: 479px) {
+.header {
+  width: 200px;
+  height: 200px;
+}
+
+.header-box {
+  width: 60px;
+  height: 160px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 70px;
+
+}
+
+.header-box1{
+  margin-top: 10px;
+}
+.right {
+  width: 200px;
+  float: none;
+}
+.right-top {
+  margin: 20px 30px;
+}
+.right-center {
+  margin: 100px 30px;
+}
+
+.right-bottom {
+  margin: 180px 30px;
+}
+
+.left {
+  float: none;
+  width: 200px;
+}
+
+.footer {
+  width: 200px;
+}
+
+}
