@@ -5,9 +5,9 @@
 
   //②商品の情報を連想配列に入れましょう。
   $products = ["鉛筆" => 100, "消しゴム" => 150, "物差し" => 500];
-  $a = $products["鉛筆"];
-  $b = $products["消しゴム"];
-  $c = $products["物差し"];
+  // $a = $products["鉛筆"];
+  // $b = $products["消しゴム"];
+  // $c = $products["物差し"];
 
 
   //③税率を計算する関数を用意します。
@@ -16,10 +16,10 @@
     return $d * TAXT;
   }
 
-  $e = money($a);
-  $f = money($b);
-  $g = money($c);
-  $products = ["鉛筆" => $e, "消しゴム" => $f, "物差し" => $g];
+  $products["鉛筆"] = money($products["鉛筆"]);
+  $products["消しゴム"] = money($products["消しゴム"]);
+  $products["物差し"] = money($products["物差し"]);
+  // $products = ["鉛筆" => $e, "消しゴム" => $f, "物差し" => $g];
 
 
   //④繰り返し文を使って画面に指定の文字を表示しましょう！
