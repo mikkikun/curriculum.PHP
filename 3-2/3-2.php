@@ -16,9 +16,9 @@
     return $d * TAXT;
   }
 
-  $products["鉛筆"] = money($products["鉛筆"]);
-  $products["消しゴム"] = money($products["消しゴム"]);
-  $products["物差し"] = money($products["物差し"]);
+  // $products["鉛筆"] = money($products["鉛筆"]);
+  // $products["消しゴム"] = money($products["消しゴム"]);
+  // $products["物差し"] = money($products["物差し"]);
   // $products = ["鉛筆" => $e, "消しゴム" => $f, "物差し" => $g];
 
 
@@ -26,7 +26,7 @@
   foreach ($products as $key => $value) {
     echo $key;
     echo "の税込み価格は";
-    echo $value;
+    echo money($value);
     echo "です";
     echo "<br />";
   } 
