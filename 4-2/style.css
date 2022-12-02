@@ -2,3 +2,67 @@
   width: 1000px;
   height: 120px;
 }
+
+.logo {
+  width: 200px;
+  height: 120px;
+  background-color: #add8e6;
+  float: left;
+}
+
+img {
+  width: 100%;
+}
+
+.userinfo {
+  width: 800px;
+  height: 120px;
+  float: right;
+}
+
+.userinfo-top {
+  height: 60px;
+  background-color: #87ceeb;
+}
+
+.name {
+  float: right;
+}
+
+.userinfo-bottom {
+  height: 60px;
+  background-color: #00ffff;
+}
+
+.time {
+  float: right;
+}
+
+
+.main {
+  /* margin: auto; */
+  width: 800px;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+
+
+.line-title {
+  background-color: #87ceeb;
+}
+
+.lines {
+  background-color: #e0ffff;
+}
+
+
+.footer {
+  width: 1000px;
+  height: 50px;
+  background-color: #00ced1;
+}
+
+.inc {
+  float: left;
+}
