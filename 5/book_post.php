@@ -8,6 +8,7 @@ require_once('function.php');
 
 // ログインしていなければ、login.phpにリダイレクト
 check_user_logged_in();
+$format_str = '%Y-%m-%d';
 
 // 提出ボタンが押された場合
 if (isset($_POST["post"])) {
@@ -16,11 +17,13 @@ if (isset($_POST["post"])) {
         echo 'タイトルが未入力です。';
     } elseif (empty($_POST["date"])) {
         echo '発売日が未入力です。';
+    } elseif (!strptime($_POST["date"], $format_str)) {
+        echo "⚪︎⚪︎⚪︎⚪︎-⚪︎⚪︎-⚪︎⚪︎の形で半角で年月日の入力してください";
     } elseif ($_POST["stock"] == "0") {
         echo '在庫数が未入力です。';
     } 
 
-    if (!empty($_POST["title"]) && !empty($_POST["date"]) && $_POST["stock"] !== "0") {
+    if (!empty($_POST["title"]) && !empty($_POST["date"]) && strptime($_POST["date"], $format_str) && $_POST["stock"] !== "0") {
         // 入力したtitleとcontentを格納
         $title = $_POST["title"];
         $date = $_POST["date"];

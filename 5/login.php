@@ -69,7 +69,7 @@ if (!empty($_POST)) {
       </div>
       <form method="post" action="">
         <input type="text" name="name" placeholder="ユーザー名" class = "input"><br><br>
-        <input type="text" name="pass" placeholder="パスワード" class = "input"><br><br>
+        <input type="password" name="pass" placeholder="パスワード" class = "input"><br><br>
         <input type="submit" value="ログイン" class = "submit">
       </form>
     </body>
