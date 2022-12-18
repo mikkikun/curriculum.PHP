@@ -10,12 +10,12 @@
     <body>
         <h1>新規作成</h1>
         <form method="POST" action="">
-          user:<br>
-          <input type="text" name="name" id="name">
-          <br>
-          mail:<br>
-          <input type="mail" name="mail" id="mail"><br>
-          <input type="submit" value="登録" id="signUp" name="signUp">
+            user:<br>
+            <input type="text" name="name" id="name">
+            <br>
+            mail:<br>
+            <input type="mail" name="mail" id="mail"><br>
+            <input type="submit" value="登録" id="signUp" name="signUp">
         </form>
     </body>
 </html>

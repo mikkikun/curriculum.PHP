@@ -12,16 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('users/login');
+    return view('welcome');
 });
 
-Route::group(['prefix' => 'users'], function() {
-    Route::get('login', 'Users\LoginController@add');
-    Route::get('register', 'Users\RegisterController@add');
-    Route::post('register', 'Users\RegisterController@add');
-});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('posts', 'Admin\PostsController@add');
+    Route::get('posts', 'Admin\PostsController@add')->middleware('auth');
+    Route::post('posts/create', 'Admin\PostsController@create')->middleware('auth');
+    Route::get('posts', 'Admin\PostsController@index')->middleware('auth');
+    Route::post('posts', 'Admin\PostsController@delete')->middleware('auth');
 });
-
